@@ -111,7 +111,7 @@ public class CountMyWords {
 	         }
 	      /*If there is a problem with the output being created. The user will receive an error message.
 	       * There are more checks to do to avoid confusion later. i.e. NullPointerException, ParseException and 
-	       * FileNotFoundException.
+	       * FileNotFoundException. Make sure no other file already exist with that name. Prevent that file from being overwritten.
 	      */
 	      catch(IOException e)
 	      {
